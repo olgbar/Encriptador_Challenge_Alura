@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d7f7d3e93f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Encriptador</title>
+    <link rel="icon" href="/imagenes/logo_alura.svg">
+
+</head>
+
+<body>
+    <!-- LOGO -->
+    <header id="logo" class="logo_alura">
+        <img class="" src="/imagenes/logo_alura.svg" alt="">
+    </header>
+
+    <main class="main">
+        <!-- ====== COLUMNA A ========== -->
+        <section class="texto_1">
+            <textarea id="textoIngresado" class="ingrese_texto" cols="30" rows="10"
+                placeholder="Ingrese el texto aquí"></textarea>
+            <div class="informacion">
+                <i class="fa-solid fa-circle-info"></i>
+                Solo letras minúsculas y sin acentos
+            </div>
+            <div class="btn-group">
+                <button type="button" id="botonEncriptado" class="boton_encriptar">ENCRIPTAR</button>
+                <button type="button" id="botonDesencriptado" class="boton_desencriptar">DESENCRIPTAR</button>
+            </div>
+        </section>
+
+        <!-- ======== COLUMNA B ======== -->
+
+        <section class="texto_2">
+            <div>
+                <img id="imagenPersona" class="muñeco" src="/imagenes/Muñeco.svg" alt="">
+            </div>
+            <div>
+                <h3 id="texto" class="mensaje_no_encontrado">No hay mensajes</h3>
+                <h5 id="texto_2" class="mensaje_ingrese_texto">Ingresa el texo que desees encriptar o desencriptar</h5>
+            </div>
+            <button type="button" id="copiar" class="boton_copiar" id="copiar" class="botonpruebaC">COPIAR</button>
+        </section>
+    </main>
+
+</body>
+
+<footer>
+    <hr>
+    <section class="content">
+        <div class="texto_footer">
+            <h5>
+                © Bárbara Olguín, 2023 | 
+                <i class="fa-solid fa-envelope"></i> barbaraolguin02@gmail.com
+            </h5>
+        </div>
+        <div class="icons_footer">
+            <a href="https://www.linkedin.com/in/b%C3%A1rbara-olgu%C3%ADn-63635824a/" target="_blank"><i
+                    class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a href="https://github.com/olgbar" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+        </div>
+    </section>
+</footer>
+
+<!--========= JAVASCRIPT ==========-->
+
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+
+    var btn3 = document.querySelector("#copiar");
+    btn3.onclick = copiarTexto;
+
+</script>
+
+</html>

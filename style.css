@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body{
+    background-color: #F3F5FC;
+}
+
+.main{
+    display: flex;
+    background-color: #F3F5FC;
+    flex-direction: row;
+}
+
+.ingrese_texto{
+    width: 100%;
+    background-color: #F3F5FC;
+    border-color: #F3F5FC;
+    border: none;
+    color: #0A3871;
+    outline: none;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.logo_alura{
+    width: 32px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+::placeholder{
+    color: #0A3871;
+}
+
+.informacion {
+    padding-top: 10px;
+    color: #343A40;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.texto_1{
+    flex:2;
+    padding-left: 200px;
+    padding-top: 100px;
+    margin-right: 25px;
+}
+
+.texto_2{
+    flex:1;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 24px;
+    border-radius: 24px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #ffffff;
+    color: #343A40;
+    font-family: 'Inter';
+}
+
+.muñeco{
+    width: 300px;
+}
+
+.mensaje_no_encontrado{
+    font-size: 24px;
+}
+.mensaje_ingrese_texo{
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.btn-group{
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.boton_desencriptar{
+    min-width: 40%;
+    margin-left: 15px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-color: #ffffff;
+    font-family: 'Inter';
+    font-weight: 800;
+    border: 0.2em solid #0A3871;
+}
+
+.boton_encriptar{
+    min-width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0A3871;
+    color: #ffffff;
+    border-radius: 10px;
+    border-color: #ffffff;
+    font-family: 'Inter';
+    font-weight: 800;
+    border: 0.2em solid #0A3871;
+}
+
+.boton_copiar{
+    min-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-color: #ffffff;
+    font-family: 'Inter';
+    font-weight: 800;
+    display: none;
+    border: 0.2em solid #0A3871;
+}
+
+.boton_copiar:hover, 
+.boton_desencriptar:hover {
+    background-color: #0a387131;
+    cursor: pointer;
+}
+
+.boton_encriptar:hover{
+    background-color: #0a3871ec;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: #343A40;
+    opacity: .9;
+    font-family: 'Inter';
+    text-align: center;
+}
+
+
+.fa-brands{
+    color: #0A3871;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.fa-solid{
+    font-size: 15px;
+}
+
+@media (max-width: 900px){
+    .main {
+        flex-direction: column;
+    }
+
+    .texto_1{
+        padding-left: 0px;
+        margin-right: 0px;
+    }
+    .muñeco{
+        display: none;
+    } 
+    .boton_copiar{
+        width: 85%;
+    }
+} 
+
+@media (max-width: 1100px){
+    .texto_1, .texto_2{
+        padding-left: 30px;
+        padding-right: 30px;    
+    }
+    .texto_2{
+        margin: 10px;
+    }
+}
